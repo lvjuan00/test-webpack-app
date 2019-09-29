@@ -1,0 +1,123 @@
+.file-type {
+  width: 244px;
+  //min-height: 186px;
+  background: #fff;
+  display: inline-block;
+  border-radius: 6px;
+  overflow: hidden;
+  padding: 10px;
+  padding-bottom: 0;
+  border: 1px solid #F5F5F5;
+  .file-type-img {
+    width: 224px;
+    height: 126px;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+    margin: 0 auto;
+    .file-type-img-bg {
+      width: 100%;
+      height: 100%;
+    }
+    .file-type-img-player {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+    }
+    .file-type-img-sign {
+      min-width: 40px;
+      min-height: 40px;
+      position: absolute;
+      bottom: 8px;
+      right: 4px;
+    }
+    .file-type-img-teacher {
+      position: absolute;
+      bottom: 2px;
+      right: 4px;
+      & > span {
+        color: #666666;
+      }
+    }
+  }
+  .file-type-section {
+    text-align: left;
+    margin: 0 auto;
+    //min-height: 50px;
+    //line-height: 50px;
+    padding: 10px 0 10px 0;
+    line-height: 26px;
+    & > p {
+      margin: 0;
+      height: 100%;
+      & > span {
+        font-size: 16px;
+        color: #666666;
+        display: inline-block;
+        &:nth-of-type(1) {
+          width: 80%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          vertical-align: top;
+        }
+        &:nth-of-type(2) {
+          width: 20%;
+          cursor: pointer;
+          vertical-align: middle;
+          & > img {
+            display: block;
+            margin-left: 50%;
+          }
+        }
+      }
+      & > a {
+        width: 20%;
+        vertical-align: middle;
+        display: inline-block;
+        margin: 0 auto;
+        & > img {
+          display: block;
+          margin-left: 50%;
+        }
+      }
+    }
+    .file-type-section-gray {
+      & > span {
+        color: #666666;
+      }
+    }
+    .file-type-section-blue {
+      & > span {
+        color: $subject_color;
+        cursor: pointer;
+      }
+    }
+    .file-type-section-show {
+      cursor: none;
+    }
+  }
+  .file-type-grade{
+    //padding-top: 10px;
+    padding-bottom: 5px;
+    .grade-name-100{
+      border: 1px solid #50B903;
+      color: #50B903;
+      border-radius:6px;
+      padding: 3px 5px;
+    }
+    .grade-name-200{
+      border: 1px solid #FF9000;
+      color: #FF9000;
+      border-radius:6px;
+      padding: 3px 5px;
+    }
+    .grade-name-300{
+      border: 1px solid #008FFF;
+      color: #008FFF;
+      border-radius:6px;
+      padding: 3px 5px;
+    }
+  }
+}

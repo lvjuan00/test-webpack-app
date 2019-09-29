@@ -1,0 +1,64 @@
+:global {
+  .music-plugin-in-progress {
+    width: 80%;
+    // background: red;
+    display: flex;
+    align-items: center;
+    padding: .2rem 0;
+    margin: .3rem auto 0 auto;
+    overflow: hidden;
+
+    /* 音乐播放器 起始时间 + 结束时间 */
+    .music-plugin-in-progress-time {
+      font-size: .12rem;
+      color: #fff;
+      width: 1rem;
+      flex: 0 0 1rem;
+      line-height: .3rem;
+      position: relative;
+      // 音乐播放器起始时间
+      &.music-plugin-in-progress-time-left {
+        text-align: left;
+      }
+      // 音乐播放器结束时间
+      &.music-plugin-in-progress-time-right {
+        text-align: right;
+      }
+    }
+
+    /* 音乐播放器进度条 */
+    .music-plugin-in-progress-bar {
+      position: relative;
+      flex: 1;
+      // 音乐播放器进度条条子
+      .music-plugin-in-progress-bar-inner {
+        height: .04rem;
+        border-radius: .1rem;
+      }
+
+      // 音乐播放器进度条小按钮
+      .music-plugin-in-progress-bar-button {
+        width: 0;
+        height: .04rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #000;
+        border-radius: .1rem;
+        // transition: all .06s linear;
+        // 音乐播放器进度条小按钮播放条
+        .music-plugin-in-progress-bar-button-icon {
+          display: block;
+          width: .14rem;
+          height: .14rem;
+          background: blue;
+          border-radius: 100%;
+          position: absolute;
+          top: -.05rem;
+          right: -.1rem;
+        }
+      }
+    }
+
+  }
+}
